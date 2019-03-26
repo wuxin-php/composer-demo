@@ -10,11 +10,15 @@ class View
 	}
 	public function with($name,$value)
 	{
-		dd($this);
 		$this->vars[$name] = $value;
 		return $this;
 	}
+	/**
+	 * 当系统输出一个不存在的对象是系统自动调用该魔术方法
+	 * @return string [description]
+	 */
 	public function __toString(){
+		extract($this->vars);
 		include $this->file;
 		return '';
 	}

@@ -13,7 +13,7 @@ class Index
 	
 	public function show()
 	{
-		return $this->view->make('index');
+		return $this->view->make('index')->with('version','版本0.1.0');
 	}
 	
 	public function post()

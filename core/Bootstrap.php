@@ -15,7 +15,7 @@ class Bootstrap
 		if (isset($_GET['s'])) {
 			$info = explode("/", $_GET['s']);
 			$class = "\web\controller\\".ucfirst($info[0]);
-			$action = "show";
+			$action = ucfirst($info[1]);
 		}else{
 			$class = "\web\controller\Index";
 			$action = "show";

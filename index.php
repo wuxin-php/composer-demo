@@ -1,3 +1,2 @@
 <?php
-
-bootstaro::run();
+bootstarp::run();

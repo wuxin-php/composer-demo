@@ -1,0 +1,11 @@
+{
+    "name": "wuxin-php/demo",
+    "description": "a test composer project",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "config": {
+        "secure-http": false
+    }
+}

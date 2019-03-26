@@ -20,7 +20,7 @@ class Bootstrap
 			$class = "\web\controller\Index";
 			$action = "show";
 		}
-		(new $class)->$action();
+		echo (new $class)->$action();//输出控制器方法执行结果
 
 	}
 }

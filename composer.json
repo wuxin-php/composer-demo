@@ -5,6 +5,15 @@
     "license": "MIT",
     "minimum-stability": "dev",
     "require": {},
+    "autoload":{
+    	"files":[
+    		"core/functions.php"
+    	],
+    	"psr-4":{
+    		"core\\":"core",
+    		"web\\":"web"
+    	}
+    },
     "config": {
         "secure-http": false
     }

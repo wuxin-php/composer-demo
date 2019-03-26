@@ -4,6 +4,7 @@ class View
 {
 	protected $file;
 	protected $vars = [];
+
 	public function make($file){
 		$this->file = 'view/'.$file.".html";
 		return $this;
